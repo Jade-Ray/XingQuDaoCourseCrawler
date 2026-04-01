@@ -33,7 +33,7 @@
 ├── main.py
 ├── pyproject.toml
 ├── .gitignore
-└── GetVideoIDwithLogin.ipynb   # 原始测试 notebook（可保留）
+└── README.md
 ```
 
 ## 安装
