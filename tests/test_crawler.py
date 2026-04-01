@@ -16,7 +16,9 @@ def crawler(tmp_path: Path) -> XingQuDaoCourseCrawler:
         retry_rounds=2,
         max_concurrency=3,
     )
-    return XingQuDaoCourseCrawler(config, "https://m1.nicegoods.cn/financial/open-live?foo=1")
+    c = XingQuDaoCourseCrawler(config, "https://m1.nicegoods.cn/financial/open-live?foo=1")
+    c._apply_course_paths({"topicId": 1, "topicName": "test"})
+    return c
 
 
 def test_extract_init_data_success(crawler: XingQuDaoCourseCrawler) -> None:

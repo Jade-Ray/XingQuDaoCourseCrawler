@@ -53,7 +53,6 @@ class XingQuDaoCourseCrawler:
                 "Cookie": self.config.cookie,
             }
         )
-        self.ts_dir.mkdir(parents=True, exist_ok=True)
 
     @classmethod
     def _sanitize_name(cls, value: str) -> str:
